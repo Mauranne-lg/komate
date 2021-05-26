@@ -1,5 +1,9 @@
 # Komate
 
+Komate is an Angular application. It aims to provide a tool for men who want to use thermal contraception (more info on https://thoreme.com/ for example). 
+
+We are developping Komate using HTML/CSS and Typescript, using Angular framework to build it as a single page application.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
 
 ## Development server
