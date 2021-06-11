@@ -1,53 +1,64 @@
-<div class="container">
-  <button type="button" class="btn btn-info btn-round" data-toggle="modal" data-target="#loginModal">
-    Login
-  </button>
-</div>
-
-<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header border-bottom-0">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="form-title text-center">
-          <h4>Login</h4>
-        </div>
-        <div class="d-flex flex-column text-center">
-          <form>
-            <div class="form-group">
-              <input type="email" class="form-control" id="email1" placeholder="Your email address...">
-            </div>
-            <div class="form-group">
-              <input type="password" class="form-control" id="password1" placeholder="Your password...">
-            </div>
-            <button type="button" class="btn btn-info btn-block btn-round">Login</button>
-          </form>
-
-          <div class="text-center text-muted delimiter">or use a social network</div>
-          <div class="d-flex justify-content-center social-buttons">
-            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top"
-              title="Twitter">
-              <i class="fab fa-twitter"></i>
-            </button>
-            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top"
-              title="Facebook">
-              <i class="fab fa-facebook"></i>
-            </button>
-            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top"
-              title="Linkedin">
-              <i class="fab fa-linkedin"></i>
-            </button>
+<div id="font">
+  <form class="login-wrap" (submit)="onSubmit()" [formGroup]="signup">
+    <!-- CHANGING FORM TAB -->
+    <div class="login-html">
+      <input id="tab-1" type="radio" name="tab" class="sign-in" checked /><label for="tab-1" class="tab">Sign In</label>
+      <input id="tab-2" type="radio" name="tab" class="sign-up" disabled /><label for="tab-2" class="tab"
+        style="text-decoration: line-through">Sign Up</label>
+      <!-- FIN CHANGING FORM TAB -->
+      <div class="login-form">
+        <!-- SIGN IN FORM -->
+        <div class="sign-in-htm">
+          <div class="group">
+            <label for="user" class="label">Email</label>
+            <input id="user" type="text" class="input" formControlName="email" />
+          </div>
+          <div class="group">
+            <label for="pass" class="label">Password</label>
+            <input id="pass" type="password" class="input" data-type="password" formControlName="password" />
+          </div>
+          <div class="group">
+            <input type="submit" class="button" value="Sign In" />
+          </div>
+          <p style="color: red" *ngIf="wrong">Wrong informations</p>
+          <p style="color: green" *ngIf="isUserConnected">
+            Connected succesfuly !
+          </p>
+          <div class="hr"></div>
+          <div class="foot-lnk">
+            <a href="#forgot">Forgot Password?</a>
           </div>
         </div>
+        <!-- FIN SIGN IN FORM -->
+
+        <!-- SIGN UP FORM -->
+        <div class="sign-up-htm" style="visibility: hidden">
+          <div class="group">
+            <label for="userup" class="label">Username</label>
+            <input id="userup" type="text" class="input" disabled />
+          </div>
+          <div class="group">
+            <label for="passup" class="label">Password</label>
+            <input id="passup" type="password" class="input" data-type="password" disabled />
+          </div>
+          <div class="group">
+            <label for="pass2" class="label">Repeat Password</label>
+            <input id="pass2" type="password" class="input" data-type="password" disabled />
+          </div>
+          <div class="group">
+            <label for="email" class="label">Email Address</label>
+            <input id="email" type="text" class="input" disabled />
+          </div>
+          <div class="group">
+            <input type="submit" class="button" value="Sign Up" />
+          </div>
+          <div class="hr"></div>
+          <div class="foot-lnk">
+            <label for="tab-1">Already Member?</label>
+          </div>
+        </div>
+        <!-- FIN SIGN UP FORM -->
       </div>
     </div>
-    <div class="modal-footer d-flex justify-content-center">
-      <div class="signup-section">Not a member yet? <a href="#a" class="text-info"> Sign Up</a>.</div>
-    </div>
-  </div>
+  </form>
 </div>

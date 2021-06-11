@@ -8,19 +8,27 @@ import { FooterComponent } from "./components/footer/footer.component";
 import { HomeComponent } from "./pages/home/home.component";
 import { ConnexionComponent } from "./components/connexion/connexion.component";
 import { TrackingPageComponent } from "./pages/tracking-page/tracking-page.component";
-import { DiscoverPageComponent } from "./discover-page/discover-page.component";
+import { DiscoverPageComponent } from "./pages/discover-page/discover-page.component";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FooterComponent,
+
     HomeComponent,
     ConnexionComponent,
     TrackingPageComponent,
     DiscoverPageComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    AppRoutingModule,
+    FontAwesomeModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
