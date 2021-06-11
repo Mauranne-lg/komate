@@ -8,3 +8,21 @@
   --dark-orange: #d96b1c;
   --white: whitesmoke;
 }
+
+.bg-orange {
+  background-color: var(--main-orange);
+}
+
+.text-orange {
+  color: var(--main-orange);
+}
+
+.btn {
+  background-color: var(--main-orange);
+  border: none;
+  color: white;
+}
+.btn:hover {
+  background-color: var(--dark-orange);
+  border: none;
+}

@@ -1,6 +1,7 @@
 .navbar {
   height: 10vh;
   margin: 0;
+  background-color: white;
 }
 
 img {
@@ -8,11 +9,10 @@ img {
   margin-right: 10px;
 }
 
-.text-orange {
-  color: var(--main-orange);
+.container-fluid {
+  background-color: white;
 }
 
-.btn {
-  border-color: var(--main-orange);
-  color: var(--main-orange);
+a {
+  font-size: 22px;
 }
