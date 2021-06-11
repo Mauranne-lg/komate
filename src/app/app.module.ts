@@ -9,6 +9,7 @@ import { HomeComponent } from "./pages/home/home.component";
 import { ConnexionComponent } from "./components/connexion/connexion.component";
 import { TrackingPageComponent } from "./pages/tracking-page/tracking-page.component";
 import { DiscoverPageComponent } from "./discover-page/discover-page.component";
+import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,7 @@ import { DiscoverPageComponent } from "./discover-page/discover-page.component";
     TrackingPageComponent,
     DiscoverPageComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],
 })

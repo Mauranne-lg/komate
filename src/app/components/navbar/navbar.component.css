@@ -16,3 +16,11 @@ img {
 a {
   font-size: 22px;
 }
+
+.log-logo {
+  margin-right: 10px;
+  width: 30px;
+  color: var(--dark-orange);
+  padding-top: 7px;
+  cursor: pointer;
+}
