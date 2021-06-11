@@ -4,12 +4,14 @@ import { ConnexionComponent } from "./pages/connexion/connexion.component";
 import { HomeComponent } from "./pages/home/home.component";
 import { TrackingPageComponent } from "./pages/tracking-page/tracking-page.component";
 import { PresentationPageComponent } from "./pages/presentation-page/presentation-page.component";
+import { FaqPageComponent } from "./pages/faq-page/faq-page.component";
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
   { path: "log", component: ConnexionComponent },
   { path: "track", component: TrackingPageComponent },
   { path: "presentation", component: PresentationPageComponent },
+  { path: "faq", component: FaqPageComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -11,6 +11,7 @@ import { TrackingPageComponent } from "./pages/tracking-page/tracking-page.compo
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { PresentationPageComponent } from './pages/presentation-page/presentation-page.component';
+import { FaqPageComponent } from './pages/faq-page/faq-page.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +22,7 @@ import { PresentationPageComponent } from './pages/presentation-page/presentatio
     ConnexionComponent,
     TrackingPageComponent,
     PresentationPageComponent,
+    FaqPageComponent,
   ],
   imports: [
     BrowserModule,
