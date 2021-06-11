@@ -10,8 +10,9 @@ import { ConnexionComponent } from "./pages/connexion/connexion.component";
 import { TrackingPageComponent } from "./pages/tracking-page/tracking-page.component";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-import { PresentationPageComponent } from './pages/presentation-page/presentation-page.component';
-import { FaqPageComponent } from './pages/faq-page/faq-page.component';
+import { PresentationPageComponent } from "./pages/presentation-page/presentation-page.component";
+import { FaqPageComponent } from "./pages/faq-page/faq-page.component";
+import { TimerComponent } from "./components/timer/timer.component";
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +24,7 @@ import { FaqPageComponent } from './pages/faq-page/faq-page.component';
     TrackingPageComponent,
     PresentationPageComponent,
     FaqPageComponent,
+    TimerComponent,
   ],
   imports: [
     BrowserModule,
