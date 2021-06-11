@@ -1,7 +1,7 @@
 <div id="font">
   <form class="login-wrap" (submit)="onSubmit()" [formGroup]="signup">
     <!-- CHANGING FORM TAB -->
-    <div class="login-html">
+    <div class="sign">
       <input id="tab-1" type="radio" name="tab" class="sign-in" checked /><label for="tab-1" class="tab">Sign In</label>
       <input id="tab-2" type="radio" name="tab" class="sign-up" disabled /><label for="tab-2" class="tab"
         style="text-decoration: line-through">Sign Up</label>
@@ -20,8 +20,8 @@
           <div class="group">
             <input type="submit" class="button" value="Sign In" />
           </div>
-          <p style="color: red" *ngIf="wrong">Wrong informations</p>
-          <p style="color: green" *ngIf="isUserConnected">
+          <p style="color: lightcoral" *ngIf="wrong">Wrong informations</p>
+          <p style="color: lightgreen" *ngIf="isUserConnected">
             Connected succesfuly !
           </p>
           <div class="hr"></div>

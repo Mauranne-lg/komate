@@ -6,11 +6,11 @@ import { AppComponent } from "./app.component";
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { HomeComponent } from "./pages/home/home.component";
-import { ConnexionComponent } from "./components/connexion/connexion.component";
+import { ConnexionComponent } from "./pages/connexion/connexion.component";
 import { TrackingPageComponent } from "./pages/tracking-page/tracking-page.component";
-import { DiscoverPageComponent } from "./pages/discover-page/discover-page.component";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { PresentationPageComponent } from './pages/presentation-page/presentation-page.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +20,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
     HomeComponent,
     ConnexionComponent,
     TrackingPageComponent,
-    DiscoverPageComponent,
+    PresentationPageComponent,
   ],
   imports: [
     BrowserModule,
